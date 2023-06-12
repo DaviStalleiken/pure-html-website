@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/global.css">
+    <title>Compreendendo HTML e a Internet</title>
+</head>
+<body>
+    <header class="header">
+    <h1 id="inicio">Compreendendo HTML e a Internet</h1>
+    <span>por Davi Stalleiken</span>
+    </header>
+
+    <div class="index">
+    <h2>Índice</h2>
+    
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+    </div>
+
+    <main>
+
+    <section class="card">
+
+    <h2 id="historia">História dos computadores</h2>
+    
+    <p>Caso você abra o dicionário de Oxford e procure pelo verbete "computador", encontrará como a primeira definição: "o que computa; calculador, calculista".</p>
+    <p>Porém acredito que a definição mais interessante é a seguinte:</p>
+
+    <blockquote><p><i>Máquina destinada ao processamento de dados, capaz de obedecer a instruções que visam produzir certas transformações nesses dados para alcançar um fim determinado. </i></p></blockquote>
+
+    <p>Segundo esta definição, qualquer máquina, eletrônica ou não, capaz de processar dados é de fato um computador e portanto sua invenção remonta há tempos muito anteriores aos que imaginamos quando pensamos em computação. Um belo exemplo é a <a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_de_Antic%C3%ADtera" target="_blank">Máquina de Anticítera</a>, considerada o primeiro computador conhecido e que era usada no século I a.C. para efetuar funções de calendário e astrologia, ao prever posições astronômicas e eclipses. Portanto desde já podemos ver o quão interligados somos a própria função de computar enquanto seres humanos e como há milênios já buscamos soluções computacionais para as questões que sempre permearam nosso âmbito social.</p>
+
+    <p>Após diversas contribuições históricas e transformações relacionadas à computação, chegamos ao advento da internet e a criação de uma linguagem que veio para democratizar o seu acesso, tudo graças ao criador da hoje famosa Linguagem de Marcação de Hipertextos (o HTML), <strong>Tim Berners-Lee</strong>.</p>
+
+    <p>Tendo proposto a <a href="https://pt.wikipedia.org/wiki/World_Wide_Web" target="_blank">World Wide Web</a> e fundado o <a href="https://pt.wikipedia.org/wiki/W3C">World Wide Web Consortium</a>, Berners-Lee foi a figura central para uma tremenda revolução em todo o universo informático e catalisou uma grande disparada de informações, ao criar ferramentas que tornavam possíveis um acesso muito maior, mais dinâmico e flexível às pessoas, as conectando mais que nunca. Tudo isso foi feito através da criação do HTML e aqui entederemos um pouco mais sobre ele.</p>
+
+    <a href="#inicio" class="voltar">Voltar ao índice</a>
+
+    </section>
+
+    <section class="card">
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+
+    <p>Grande parte sobre entender o papel do HTML é compreender exatamente o quê são <i>Clients</i> e <i>Servers</i>, ou, no nosso bom português, <i>clientes</i> e <i>servidores</i>.</p>
+
+    <p>Ambos estes termos es~toa intimamente ligados, pois a arquitetura da rede de computadores une os dois, assim fazendo com que um lide reciprocamente com o outro.</p>
+
+    <p>Trabalhando aqui com o primeiro, podemos dizer que o cliente é a máquina do usuário, o que ele utiliza para acessar a rede. No caso, seu computador ou celular. Dentro destas máquinas, temos o que podemos chamar de aplicações clientes, que recebem dados e serviços provenientes do servidor, o qual em seguida abordaremos.</p>
+
+    <p>Alguns exemplos de aplicações clientes são aquelas instaladas em um computador e que possuem acesso à internet, como navegadores, aplicativos de streaming de música e jogos online.</p>
+
+    <p>Para uma explicação mais a fundo, porém ainda simples e compreensível sobre este modelo, visite <a href="https://www.gta.ufrj.br/ensino/eel878/redes1-2016-1/16_1/p2p/modelo.html" target="_blank"> esta página da UFRJ</a>.</p>
+
+    </section>
+
+    <section class="card">
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+
+    
+    <p>Servers ou servidores são máquinas responsáveis por responder as requisições enviadas pelos aplicativos clientes, pois contém os dados e informações que podem ser disponibilizados e então enviados para acesso de acordo com a demanda.</p>
+
+    <p>Normalmente são máquinas mais poderosas e eficientes que computadores comuns, pois necessitam armazenar muita informação e ter uma grande poder de processamento, uma vez que podem receber desde requisições individuais até mesmo milhões delas simultaneamente.</p>
+
+    <p>Para saber mais, consulte <a href="https://www.controle.net/faq/o-que-sao-servidores" target="_blank">este excelente artigo</a> do controle.net.</p>
+
+
+    </section>
+
+    <section class="card">
+
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+
+    <p>O HTML, como seu próprio nome já diz, é uma linguagem onde as tags (marcações) delimitam texto e dão significado a ele, assim permitindo que ao utilizar palavras de forma específica e estrutura, estas tomem um formato digital altamente compreensível.</p>
+
+    <p>Normalmente os documentos HTML são dividos em duas tags principais, a &lt;head&gt; e a &lt;body&gt;. Dentro da tag &lt;head&gt; é onde essas as informações de forma mais metalinguística, como o que comunicar ao browser para ser renderizado, importações, informações de SEO (sobre o que você também pode <a href="https://resultadosdigitais.com.br/marketing/o-que-e-seo/">aprender mais aqui)</a> e pequenos detalhes que não são incorporados no corpo do texto, ou seja, na janela que exibe o conteúdo do site em si. Esse, por sua vez, é tudo que estará incluso dentro da tag &lt;body&gt;, como conteúdos de texto, parágrafos, cards, botões, formulários, links e muito mais. Cada um destes tem sua própria tag HTML e o estudo da linguagem trará um grande conhecimento de como utilizar cada uma delas.</p>
+
+    </section>
+
+    <section class="card">
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+
+    <p>Duas das tags que mais utilizamos dentro do HTML são a &lt;ol&gt; e a &lt;ul&gt;, que, respectivamente, correspondem a listas ordenadas e não-ordenadas. Dentro destas listas utilizamos outra tag para seus itens, a &lt;li&gt;. Cada um desses itens receberá uma desta tag e então estará subordinado a qual foi incluso. Uma lista ordenada pode ser usada para catalogar algo que realmente tenha importância estar em sequência, caso queiramos mostrar ela de tal forma. Este é um exemplo de uma lista criada desta forma:</p>
+
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <p>Já uma lista não ordenada é utilizada quando a sequência de seus itens não tem importância e é representada desta forma:</p>
+
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ul>
+
+    </section>
+
+    <section class="card">
+
+    <h2 id="referencias">Links de referências</h2>
+        Este website foi feito durante um curso da plataforma Digital Innovation One. Estes foram alguns dos sites utilizados durante a confecção deste artigo. 
+    <ul>
+        <li><a href="http://dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/W3C" target="_blank">https://pt.wikipedia.org/wiki/W3C</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_de_Antic%C3%ADtera">https://pt.wikipedia.org/wiki/M%C3%A1quina_de_Antic%C3%ADtera</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/World_Wide_Web">https://pt.wikipedia.org/wiki/World_Wide_Web</a></li>
+        <li><a href="https://www.gta.ufrj.br/ensino/eel878/redes1-2016-1/16_1/p2p/modelo.html" target="_blank">https://www.gta.ufrj.br/ensino/eel878/redes1-2016-1/16_1/p2p/modelo.html</a></li>
+        <li><a href="https://www.controle.net/faq/o-que-sao-servidores" target="_blank">https://www.controle.net/faq/o-que-sao-servidores</a></li>
+        <li><a href="https://resultadosdigitais.com.br/marketing/o-que-e-seo/" target="_blank">https://resultadosdigitais.com.br/marketing/o-que-e-seo/</a></li>
+    </ul>
+    </section>
+    </main>
+</body>
+</html>
